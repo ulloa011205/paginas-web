@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Simple</title>
+</head>
+<body>
+
+    <h1>Formulario de contacto</h1>
+
+    <form action="#">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="correo">Correo Electronic:</label><br>
+            <input type="email" id="correo" name="correo"><br><br>
+
+            <label for="Contraseña">Contraseña:</label><br>
+            <input type="password" name="contraseña" id="contraseña" placeholder="contraseña"><br> <br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
+            
+            <input type="submit" value="enviar"><br><br>
+            <label for="genero" id="genero"></label><br><br>
+              <select name="genero" id="genero">
+                <option value="option_1">Masculino</option>
+                <option value="option_2">femenino</option>
+              </select>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
