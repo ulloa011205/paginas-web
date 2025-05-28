@@ -1,0 +1,98 @@
+<!--1. Diseña una sección <header> con un fondo oscuro y texto blanco. Dentro coloca un <h1>
+con el nombre del sitio y un menú de navegación (<nav>) con enlaces <a> horizontales y
+separados.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <style>
+   
+    header {
+      background-color: #222;     
+      color: white;                 
+      padding: 20px;               
+      display: flex;                
+      justify-content: space-between; 
+      align-items: center;    
+       }   
+
+    nav a {
+      color: white;                 
+      text-decoration: none;        
+      margin: 0 15px;               
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;   
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Sitio Web</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Acerca</a>
+      <a href="#">Contacto</a>
+    </nav>
+</header>
+<!--2. Crea una página principal (<main>) que incluya una <section> con una imagen <img> de
+bienvenida y un párrafo <p>. Aplica padding a la sección, bordes redondeados a la imagen y
+centra el contenido.-->
+
+<main>
+    <section style="padding: 20px; text-align: center;">
+        <img src="data:image/jpeg;base64,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" alt="Imagen de Bienvenida" style="border-radius: 15px; max-width: 100%;">
+        <p>Bienvenido a mi sitio web. Aquí encontrarás información interesante y útil.</p>
+    </section>
+</main>
+<!--3. Diseña una tarjeta de perfil dentro de un <article> que incluya un <h2> con el nombre de
+la persona, un párrafo de descripción y una imagen. Aplica sombras, padding, tipografía
+personalizada y márgenes.-->
+
+<article>
+    <h2 style="text-align: center;">Noe Ulloa</h2>
+    <p style="text-align: center;">Un joven que quiere aprender a programar y ser el mejor en lo que hace, deportista con metas y objetivos claros</p>
+
+    <img style="padding: 20px; margin:0 auto;text-shadow:2px 2px 5px rgba(0,0,0,0.5); display:block;border-radius: 5px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9RUZJ0pOOG9cI0hnuiqAVRnSKIudCtuHszQ&s" alt="yo">
+
+</article>
+
+<!--4. Crea una lista de tareas con <ul> y <li> dentro de una <section>. Cada ítem debe tener
+fondo alternado (uno claro, uno más oscuro), y un ícono al inicio usando pseudo-elementos
+::before.-->
+
+<section>
+    <ul >
+        <li style="background-color: #222; padding: 5px;color:#ffffff;text-align:center;border-radius: 5px">Levantarse</li>
+        <li style="background-color: #cfcebf;padding: 5px;text-align:center;border-radius :5px;">comer el desayuno</li>
+        <li style="background-color: #222; padding: 5px;color:#ffffff ;text-align:center;border-radius: 5px;">Alistarse</li>
+        <li style="background-color: #cfcebf; padding: 5px;text-align:center;border-radius: 5px;">llegar a la Uni</li>
+        <li style="background-color: #222; padding: 5px;color:#ffffff;text-align:center;border-radius:5px;">comer el almuerzo</li>
+        <li style="background-color: #cfcebf; padding: 5px;text-align:center;border-radius: 5px;">llegar al tecnico</li>
+        <li style="background-color: #222; padding: 5px;color:#ffffff;text-align:center;border-radius: 5px;">volver a casa</li>
+        <li style="background-color: #cfcebf;padding: 5px;text-align:center;border-radius: 5px;">estudiar</li>
+    </ul>
+</section>
+<!--5. Diseña una lista ordenada <ol> con pasos de un proceso dentro de un <section>. Usa
+bordes para separar los pasos y margina cada ítem.-->
+<section>
+    <ol>
+        <li style="border: 20px;background-color:#222;text-align:center">Desayunar</li>
+        <li>Almorzar</li>
+        <li>Cenar</li>
+    </ol>
+</section>
+
+
+
+</body>
+</html>
+
+
